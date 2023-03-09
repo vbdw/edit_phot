@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pe.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+            <div class="img-box">
+                <img id="img">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="upload">
+                <label for="upload">upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        <div class="filters">
+            <ul>
+                <li>
+                    <label for="saturate">saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="contrast">contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="prightness">prightness</label>
+                    <input type="range" id="prightness" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="sepai">sepai</label>
+                    <input type="range" id="sepai" min="0" max="200" value="0">
+                </li>
+                <li>
+                    <label for="grayscale">grayscale</label>
+                    <input type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+                </li>
+                <li>
+                    <label for="blur">blur</label>
+                    <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                </li>
+                <li>
+                    <label for="hueRotate">blur</label>
+                    <input type="range" id="hueRotate" min="0" max="350" value="0">
+                </li>
+                <li>
+                    <a download="true" id="download">download</a>
+                    <span onclick="resetValue()">Reset</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="pe.js"></script>
+</body>
+</html>
